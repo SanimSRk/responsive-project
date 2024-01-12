@@ -22,8 +22,18 @@ nav {
 .header_light_on_of_areya {
   display: flex;
   background-color: #111729;
+  padding: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
 }
-
+.color_chinge {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .icon_areya {
   display: none;
   font-size: 2rem;
@@ -78,7 +88,7 @@ button {
 .img_div img {
   width: 100%;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
   main {
     flex-direction: column-reverse;
   }
@@ -101,5 +111,22 @@ button {
   }
   .header_light_on_of_areya {
     display: none;
+  }
+}
+
+/*tablate mode medaya screen*/
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  .main_section {
+    width: 100%;
+  }
+  .img_div {
+    width: 100%;
+  }
+  .header_list_areya li {
+    margin: 0 1rem;
   }
 }
